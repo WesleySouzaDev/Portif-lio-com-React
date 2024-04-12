@@ -1,0 +1,695 @@
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    padding: 0rem;
+    margin: 1rem;
+    cursor: default;
+}
+
+.homePage {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: Montserrat-Regular;
+    background-color: #171717;
+}
+
+.top {
+    background-color: #171717;
+    position: fixed;
+    z-index: 10000000;
+    width: 100%;
+}
+
+.end {
+    width: 100%;
+    height: 35rem;
+}
+
+.bannerPage {
+    background: #dc2626;
+    background: linear-gradient(0deg, #dc2626 0%, #171717 90%);
+}
+
+.logoTipo {
+    display: flex;
+    justify-items: flex-start;
+    padding: 1rem;
+}
+
+.linkMenuMobile,
+.linkMenuDesktop {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Montserrat-Bold;
+}
+
+
+.linkMenuDesktop:hover,
+.linkMenuMobile:hover {
+    transition: .2s;
+    color: #dc2626;
+}
+
+
+.textBanner {
+    display: flex;
+    flex-direction: column;
+    text-overflow: 10px 10px 100px #ffffff;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+    cursor: default;
+}
+
+
+.linkGithub:hover,
+.linkLinkedin:hover {
+    background-color: #ffffff;
+    color: #171717;
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+.linkGithub:hover .GitHub,
+.linkLinkedin:hover .Linkedin {
+    filter: brightness(0%);
+}
+
+.about {
+    width: 100%;
+    height: 30rem;
+    padding: 10rem 0rem 2rem 0rem;
+    background-image: url(../img/slide_4.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.projects {
+    background-image: url(../img/background_2.jpeg);
+    color: #ffffff;
+    text-align: center;
+    background-size: cover;
+    padding: 8rem 0rem 3rem 0rem;
+}
+
+.cardProjects {
+    padding: 1.5rem 0rem;
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    transition: .35s;
+}
+
+.gridProjects:hover> :not(:hover) {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.imgCard {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.textProjects {
+    padding-bottom: 0.8rem;
+}
+
+.linkCard {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding: 1.8rem 1rem;
+}
+
+.repLink {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 0.8rem 0rem;
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Montserrat-Bold;
+    font-size: 1.5rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.repLink:hover {
+    color: #171717;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 20px #ffffff;
+    background-color: #ffffff;
+}
+
+.imgGitHub,
+.imgSite {
+    width: 35px;
+    height: 35px;
+    transition: .2s ease-in-out;
+}
+
+.repLink:hover .imgGitHub,
+.repLink:hover .imgSite {
+    filter: brightness(0%);
+}
+
+.contact {
+    padding-top: 8rem;
+    background: #da0c0c;
+    background: linear-gradient(0deg, #da0c0c 0%, #171717 50%, #da0c0c 100%);
+    width: 100vw;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titleContact {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    margin: 0rem;
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: Montserrat-Medium;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.form .txtTitle {
+    color: #ffffff;
+    font-family: Montserrat-Bold;
+    margin-bottom: 0.8rem;
+}
+
+.form .txtInput {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-family: Montserrat-Medium;
+    padding: 0rem 1rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: solid #ffffff 2px;
+    max-width: 35rem;
+    background: transparent;
+    margin-bottom: 1.5rem;
+    outline: none;
+}
+
+.form :nth-child(3) {
+    color: #ffffff;
+    font-family: Montserrat-Bold;
+    margin-bottom: 0.8rem;
+}
+
+.form :nth-child(4) {
+    color: #ffffff;
+    padding: 0.8rem;
+    border: solid #ffffff 2px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Montserrat-Medium;
+    background: transparent;
+    outline: none;
+    resize: none;
+    max-width: 35rem;
+    height: 18rem;
+
+}
+
+.form .btnForm {
+    color: #ffffff;
+    border: solid #ffffff 2px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Montserrat-Medium;
+    padding: 0.8rem;
+    margin: 0.8rem 0rem;
+    background: transparent;
+    transition: .2s ease-in-out;
+}
+
+.form .btnForm:hover {
+    cursor: pointer;
+    color: #171717;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #ffffff;
+    background-color: #ffffff;
+}
+
+.divFlexColums {
+    max-width: 35rem;
+    padding: 2rem;
+}
+
+.linkIcons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15.3rem;
+    border-radius: 10px;
+    backdrop-filter: brightness(40%);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.divLink {
+    display: flex;
+    padding-left: 1.5rem;
+    flex-direction: column;
+}
+
+.divLink .config {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 2.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.iconimg {
+    color: #ffffff;
+    height: 2rem;
+    width: 2rem;
+}
+
+.desc {
+    color: #ffffff;
+    display: flex;
+}
+
+.map {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+    margin: none;
+    height: 5rem;
+    width: 100%;
+}
+
+.copyWrite {
+    font-family: Montserrat-Regular;
+    color: #ffffff;
+    margin: 0px;
+}
+
+/* Aqui fica a configuração responsiva do site  */
+
+
+/* -- Configuração para telas de pc pra cima --*/
+@media screen and (min-width: 998px) {
+
+    .top {
+        padding: 0.2rem 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bannerPage {
+        padding: 16rem 2rem 4rem 2rem;
+    }
+
+    .titleBanner {
+        padding: 0px 1rem;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: #ffffff;
+    }
+
+    .name {
+        font-family: Montserrat-Regular;
+        font-size: 4.2rem;
+        text-decoration: none;
+        transition: .2S ease-in-out;
+    }
+
+    .name:hover {
+        text-shadow: 0px 0px 20px #ffffff;
+    }
+
+    .funcao {
+        font-size: 2rem;
+        font-family: Montserrat-Medium;
+    }
+
+    .funcao:hover {
+        text-shadow: 0px 0px 10px #ffffff;
+    }
+
+    .sobre {
+        font-size: 1.2rem;
+        font-family: Montserrat-Medium;
+    }
+
+    .sobre:hover {
+        text-shadow: 0px 0px 10px #ffffff;
+    }
+
+    .wrap {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .colum1 {
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+    }
+
+    .logoTipo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imgLogoTipo {
+        max-width: 100px;
+        padding: 1rem 1.2rem;
+    }
+
+    .imgBanner {
+        max-width: 300px;
+        border-radius: 20px;
+        filter: grayscale(1);
+        transition: .3s;
+    }
+
+    .imgBanner:hover {
+        transform: scale(1.10);
+        filter: grayscale(0);
+        transition: .3s;
+    }
+
+    .menuWeb {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuDesktop {
+        padding-right: 2rem;
+    }
+
+    .menuMobile {
+        display: none;
+    }
+
+    .menuTwo {
+        text-transform: uppercase;
+        gap: 1.2rem;
+        display: flex;
+    }
+
+    .btnPortifolio {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .linkGithub,
+    .linkLinkedin {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        max-width: 190px;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: #171717;
+        color: #ffffff;
+        font-family: Montserrat-Bold;
+        font-size: 1.3rem;
+        padding: 1.8rem;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        transition: .3s ease-in-out;
+    }
+
+    .Linkedin,
+    .GitHub {
+        width: 45px;
+        height: 45px;
+        transition: .3s ease-in-out;
+    }
+
+    .divAbout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 28rem;
+        border-radius: 15px;
+        backdrop-filter: brightness(40%);
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        transition: 3s ease-in-out;
+    }
+
+    .titleAbout {
+        font-size: 3rem;
+        cursor: default;
+        font-family: Montserrat-Medium;
+    }
+
+    .divP {
+        text-align: center;
+        font-size: 1.5rem;
+        cursor: default;
+    }
+
+    .linkWM {
+        color: #eded0e;
+    }
+
+    .gridProjects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+
+    .top {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+    }
+
+    .page {
+        justify-content: center;
+    }
+
+    .bannerPage {
+        display: flex;
+        padding: 2rem;
+    }
+
+    .name {
+        font-size: 3rem;
+        text-decoration: none;
+        transition: .2S ease-in-out;
+    }
+
+    .name:hover {
+        text-shadow: 0px 0px 20px #ffffff;
+    }
+
+    .funcao {
+        font-size: 1.5rem;
+        font-family: Montserrat-Medium;
+    }
+
+    .funcao:hover {
+        text-shadow: 0px 0px 10px #ffffff;
+    }
+
+    .sobre {
+        font-size: 1rem;
+        font-family: Montserrat-Medium;
+    }
+
+    .sobre:hover {
+        text-shadow: 0px 0px 10px #ffffff;
+    }
+
+    .wrap {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .imgLogoTipo {
+        max-width: 100px;
+    }
+
+    .menuDesktop {
+        display: none;
+    }
+
+    .menuMobile {
+        padding: 0px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .titleBanner {
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: #ffffff;
+    }
+
+    .colum1 {
+        display: flex;
+        flex-direction: column;
+        justify-items: end;
+    }
+
+    .imgBanner {
+        max-width: 300px;
+        border-radius: 20px;
+        filter: grayscale(1);
+        transition: .3s;
+    }
+
+    .imgBanner:hover {
+        transform: scale(0.90);
+        filter: grayscale(0);
+        transition: .3s;
+    }
+
+    .btnPortifolio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .Linkedin,
+    .GitHub {
+        width: 20px;
+        height: 20px;
+        transition: .3s ease-in-out;
+    }
+
+    .linkGithub,
+    .linkLinkedin {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        max-width: 100px;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: #171717;
+        color: #ffffff;
+        font-family: Montserrat-Bold;
+        font-size: 0.8rem;
+        padding: 1.5rem;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        transition: .3s ease-in-out;
+    }
+
+    .divAbout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 28rem;
+        border-radius: 15px;
+        backdrop-filter: brightness(40%);
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        transition: 3s ease-in-out;
+    }
+
+    .titleAbout {
+        font-size: 2rem;
+        cursor: default;
+        font-family: Montserrat-Medium;
+    }
+
+    .divP {
+        text-align: center;
+        font-size: 1rem;
+        cursor: default;
+    }
+
+    .linkWM {
+        color: var(--cor-amarelo);
+    }
+
+    .gridProjects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .gridProjects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../../public/Montserrat-Regular.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../../public/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../../public/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../../public/Montserrat-Bold.otf);
+}
