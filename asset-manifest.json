@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portifolio-com-React/static/css/main.7e15e2e4.css",
+    "main.js": "/Portifolio-com-React/static/js/main.3f0b97a7.js",
+    "static/media/slide_4.jpeg": "/Portifolio-com-React/static/media/slide_4.ee6ffe2c91f32921f7e0.jpeg",
+    "static/media/slide_2.jpg": "/Portifolio-com-React/static/media/slide_2.57f6a93685a8161309b0.jpg",
+    "static/media/perfil.jpg": "/Portifolio-com-React/static/media/perfil.7d6d54fea16e2c0ea250.jpg",
+    "static/media/Montserrat-Bold.otf": "/Portifolio-com-React/static/media/Montserrat-Bold.a6bc51efd33e2f7f1b95.otf",
+    "static/media/Montserrat-Medium.otf": "/Portifolio-com-React/static/media/Montserrat-Medium.4b4a4b36283ebeb2cf89.otf",
+    "static/media/Montserrat-Regular.otf": "/Portifolio-com-React/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
+    "static/media/Montserrat-Light.otf": "/Portifolio-com-React/static/media/Montserrat-Light.8c76b7212dc892314701.otf",
+    "static/media/background_2.jpeg": "/Portifolio-com-React/static/media/background_2.b67d7d1438098a2993bc.jpeg",
+    "static/media/logo_white.png": "/Portifolio-com-React/static/media/logo_white.54f860ffe80314bdacf0.png",
+    "index.html": "/Portifolio-com-React/index.html",
+    "main.7e15e2e4.css.map": "/Portifolio-com-React/static/css/main.7e15e2e4.css.map",
+    "main.3f0b97a7.js.map": "/Portifolio-com-React/static/js/main.3f0b97a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e15e2e4.css",
+    "static/js/main.3f0b97a7.js"
+  ]
+}
